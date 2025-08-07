@@ -1,0 +1,21 @@
+package java2;
+import java.util.Scanner;
+public class electricitybill{
+    public static void main(String[]args){
+        Scanner scan=new Scanner(System.in);
+        System.out.print("enter the electricity units used ");
+        int units=scan.nextInt();
+        int amount=0;
+        switch(units/100){
+            case 0:// 1-99 units
+            amount=units *2;
+            break;
+            case 1://100-199 units
+            case 2://200-299 units
+            amount=units * 3;
+            break;
+            default://300+units
+        }
+    }
+}
+    
