@@ -1,0 +1,46 @@
+
+
+import java.util.Scanner;
+import java.util.HashSet;
+
+class Sample {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int a = scan.nextInt();
+
+        // HashSet containing even digits
+        HashSet<Integer> evenDigits = new HashSet<>();
+        evenDigits.add(0);
+        evenDigits.add(2);
+        evenDigits.add(4);
+        evenDigits.add(6);
+        evenDigits.add(8);
+
+        int sumEven = 0;
+        int finalDigitSum = 0;
+
+        // Single while loop to process both steps
+        while (a > 0 || sumEven > 0) {
+            if (a > 0) {
+                int dig = a % 10;
+                if (evenDigits.contains(dig)) {
+                    sumEven += dig;
+                }
+                a /= 10;
+            } else {
+                int dig = sumEven % 10;
+                finalDigitSum += dig;
+                sumEven /= 10;
+            }
+        }
+
+        // Final check and output
+        if (finalDigitSum % 2 == 0) {
+            System.out.println("even");
+        } else {
+            System.out.println("odd");
+        }
+    }
+}
+
