@@ -1,0 +1,15 @@
+package java3;
+ public class method{
+     public static void m1(int a,int b,int c){
+     int a1=a;
+     int b1=b;
+     int c1=c;
+     double total=0.5*(a1+b1)*c1;
+     System.out.println(total);
+     }
+     public static void main(String[]args){
+         m1(50,48,80);
+         
+     }
+     }
+         
