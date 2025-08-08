@@ -1,0 +1,16 @@
+package java3;
+import java.util.Scanner;
+public class sumdig {
+    public static void main(String[]args){
+    Scanner scan=new Scanner(System.in);
+    int a=6534;
+    int sum=0;
+    while(a>0){
+       int dig=a%10;
+       sum=sum+dig;
+       a=a/10;
+    }
+     System.out.println("sum");  
+    }
+}
+         
