@@ -1,0 +1,16 @@
+package com.java;
+public class sample4{
+    int d=90;
+    String a="hello;";
+    char c ='a';
+    double d1 =90.211d;
+    double d2=56743;
+    public static void area(sample4 t){
+     System.out.println(t.c);
+    }
+    public static void main(String[]args){
+        sample4 s=new sample4();
+        int a=10;
+        area(s);
+    }   
+    }
