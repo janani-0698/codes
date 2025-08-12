@@ -1,0 +1,16 @@
+public class Maxelement{
+    public static void main(String[] args) {
+      int[][]matrix={{18,19,20},
+                     {21,22,23},
+                     {24,25,26}
+      };
+      int max=50;
+      for(int[]row:matrix){
+        for(int num:row){  
+          if(num > max)
+          max=num;
+          
+      }}
+         System.out.println("largest elemant:"+ max);
+    }
+}
