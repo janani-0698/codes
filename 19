@@ -1,0 +1,15 @@
+public class DarrayExample{
+    public static void main(String[]args){
+        String[][] names={
+            {"Janani","Pooja","Nive"},
+            {"Abi","Poorni","Jaya"},
+            {"Madhu","Keerthi","Sara"}
+        };
+        System.out.println("names in 2darray:");
+        for(int i=0;i<names.length;i++){
+        for(int j=0;j<names.length;j++){
+        System.out.print(names[i][j]+"/t");
+    }
+}
+}    
+}        
