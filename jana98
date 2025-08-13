@@ -1,0 +1,15 @@
+public class sample8{
+    public static void main(String[]args){
+        String a="ajA";
+        String b="";
+        for(int i=0;i<a.length();i++){
+            char t=a.charAt(i);
+            b=t+b;
+        }
+        if(b.equalsIgnoreCase(a)){ 
+            System.out.println(b);
+        }
+        else
+        System.out.println("its not");
+        }
+}
