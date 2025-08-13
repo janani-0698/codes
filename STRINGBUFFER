@@ -1,0 +1,33 @@
+public class StringBufferExample{
+    public static void main(String[]args){
+        StringBuffer sb=new StringBuffer("Hello");
+        
+        sb.append("World");
+        System.out.println("after append:"+sb);
+       
+        sb.insert(5,",beautfull");
+        System.out.println("after insert:"+sb);
+        
+       sb.replace(7,15,"amazing");
+       System.out.println("after replace:"+sb);
+       
+       sb.delete(5,13);
+       System.out.println("after delete:"+sb);
+      
+       sb.reverse();
+       System.out.println("after reverse:"+sb);
+   
+    System.out.println("capacity:"+sb.capacity());
+}
+}
+
+
+//OUTPUT
+
+
+after append:HelloWorld
+after insert:Hello,beautfullWorld
+after replace:Hello,bamazingWorld
+after delete:HellogWorld
+after reverse:dlroWgolleH
+capacity:21
