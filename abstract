@@ -1,0 +1,30 @@
+import java.util.*;
+abstract class vehicle{
+    abstract void gas();
+    abstract void brake();
+    
+    void startEngine(){
+        System.out.println("Engine is running...!");
+    }
+		
+    }
+class car extends vehicle{
+    void gas(){
+   System.out.println("gas pedal is pressing...!");
+    }
+    void brake(){
+        System.out.println("brake is applied");
+        
+    }
+    }
+public class Main
+{
+	public static void main(String[] args) {
+	vehicle obj1=new car();
+	obj1.startEngine();
+	obj1.brake();
+	obj1.gas();
+	
+	}
+}
+	
